@@ -20,8 +20,13 @@ public class SortExperiments {
     }
 
     public void sort1() {
-        // TODO: Skriv koden til sorteringsøvelse 1 her i denne metode!
+        int[] tal = {6,2,8,1,9,21,0,3};
+
+        System.out.println("Før sortering: " + Arrays.toString(tal));
+        Arrays.sort(tal);
+        System.out.println("Efter sortering: " + Arrays.toString(tal));
     }
+
     public void sort2() {
         // TODO: Skriv koden til sorteringsøvelse 2 her i denne metode!
     }
