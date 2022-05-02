@@ -1,6 +1,6 @@
 package kea.spring2022.sorting;
 
-public class Ball implements Sammenlignbar {
+public class Ball implements Sammenlignbar, Comparable {
     private int brightness;
 
     public Ball() {
@@ -26,5 +26,10 @@ public class Ball implements Sammenlignbar {
     @Override
     public boolean sorteresEfter(Sammenlignbar andetObjekt) {
         return brighterThan((Ball)andetObjekt);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return this.brightness - ((Ball)o).brightness;
     }
 }
