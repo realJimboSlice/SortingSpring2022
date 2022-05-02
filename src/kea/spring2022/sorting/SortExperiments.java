@@ -57,7 +57,12 @@ public class SortExperiments {
     }
 
     public void sort4() {
-        // TODO: Skriv koden til sorteringsøvelse 4 (med quicksort) her i denne metode!
+        String[] ord = {"bonde", "gård", "abe", "kat", "hund", "ko", "and"};
+
+        System.out.println("Før sortering: " + Arrays.toString(ord));
+        QuickSort sorter = new QuickSort();
+        sorter.sort(ord);
+        System.out.println("Efter sortering: " + Arrays.toString(ord));
     }
 
     public void sortBalls2() {
