@@ -25,6 +25,6 @@ public class Ball implements Sammenlignbar{
 
     @Override
     public boolean sorteresEfter(Sammenlignbar andetObjekt) {
-        return false;
+        return brighterThan((Ball) andetObjekt);
     }
 }
