@@ -28,7 +28,7 @@ public class SortExperiments {
     }
 
     public void sort2() {
-        String[] ord = {"bonde", "gård", "abe", "kat", "hund", "ko", "and"};
+        String[] ord = {"bonde", "Gård", "Abe", "kat", "hund", "ko", "and"};
 
         System.out.println("Før sortering: " + Arrays.toString(ord));
         Arrays.sort(ord);
