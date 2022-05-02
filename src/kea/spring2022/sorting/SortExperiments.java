@@ -10,8 +10,8 @@ public class SortExperiments {
         //app.sortBalls1();
         //app.sort3();
         //app.sort4();
-        app.sortBalls2();
-        //app.sortBalls3();
+        //app.sortBalls2();
+        app.sortBalls3();
 
         //app.sortPersons1();
         //app.sortPersons2();
@@ -85,7 +85,10 @@ public class SortExperiments {
             ballsarray[i] = new Ball();
         }
 
-        // TODO: Skriv koden til sorteringsøvelse ball-sorter3 (med quicksort-sammenlignbar) her:
+        System.out.println("Før sortering: " + Arrays.toString(ballsarray));
+        QuickSortSammenlignbar sorter = new QuickSortSammenlignbar();
+        sorter.sort(ballsarray);
+        System.out.println("Efter sortering: " + Arrays.toString(ballsarray));
 
     }
 
