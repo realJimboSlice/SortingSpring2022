@@ -9,9 +9,9 @@ public class SortExperiments {
         //app.sort2();
         //app.sortBalls1();
         //app.sort3();
-        app.sort4();
+        //app.sort4();
         //app.sortBalls2();
-        //app.sortBalls3();
+        app.sortBalls3();
 
         //app.sortPersons1();
         //app.sortPersons2();
@@ -76,8 +76,10 @@ public class SortExperiments {
             ballsarray[i] = new Ball();
         }
 
-        // TODO: Skriv koden til sorteringsøvelse ball-sorter2 (med quicksort) her:
-
+        System.out.println("Før sortering " + Arrays.toString(ballsarray));
+        QuickSortBalls sorter = new QuickSortBalls();
+        sorter.sort(ballsarray);
+        System.out.println("Efter sortering " + Arrays.toString(ballsarray));
     }
 
     public void sortBalls3() {
@@ -87,7 +89,7 @@ public class SortExperiments {
             ballsarray[i] = new Ball();
         }
 
-        // TODO: Skriv koden til sorteringsøvelse ball-sorter3 (med quicksort-sammenlignbar) her:
+
 
     }
 
