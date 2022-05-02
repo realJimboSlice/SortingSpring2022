@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class SortExperiments {
     public static void main(String[] args) {
         SortExperiments app = new SortExperiments();
-        app.sort1();
-        //app.sort2();
+        //app.sort1();
+        app.sort2();
         //app.sort3();
         //app.sort4();
         //app.sortBalls1();
@@ -28,7 +28,11 @@ public class SortExperiments {
     }
 
     public void sort2() {
-        // TODO: Skriv koden til sorteringsøvelse 2 her i denne metode!
+        String[] ord = {"bonde", "gård", "abe", "kat", "hund", "ko", "and"};
+
+        System.out.println("Før sortering: " + Arrays.toString(ord));
+        Arrays.sort(ord);
+        System.out.println("Efter sortering: " + Arrays.toString(ord));
     }
 
     public void sortBalls1() {
