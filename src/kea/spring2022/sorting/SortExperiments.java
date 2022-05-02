@@ -7,8 +7,8 @@ public class SortExperiments {
         SortExperiments app = new SortExperiments();
         //app.sort1();
         //app.sort2();
-        app.sortBalls1();
-        //app.sort3();
+        //app.sortBalls1();
+        app.sort3();
         //app.sort4();
         //app.sortBalls2();
         //app.sortBalls3();
@@ -48,7 +48,12 @@ public class SortExperiments {
     }
 
     public void sort3() {
-        // TODO: Skriv koden til sorteringsøvelse 3 (med quicksort) her i denne metode!
+        int[] tal = {6,2,8,1,9,21,0,3};
+
+        System.out.println("Før sortering: " + Arrays.toString(tal));
+        QuickSort sorter = new QuickSort();
+        sorter.sort(tal);
+        System.out.println("Efter sortering: " + Arrays.toString(tal));
     }
 
     public void sort4() {
