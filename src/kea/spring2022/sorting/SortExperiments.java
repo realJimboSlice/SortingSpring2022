@@ -7,9 +7,9 @@ public class SortExperiments {
         SortExperiments app = new SortExperiments();
         app.sort1();
         //app.sort2();
+        //app.sortBalls1();
         //app.sort3();
         //app.sort4();
-        //app.sortBalls1();
         //app.sortBalls2();
         //app.sortBalls3();
 
