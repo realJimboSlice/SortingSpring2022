@@ -1,6 +1,6 @@
 package kea.spring2022.sorting;
 
-public class Person {
+public class Person implements Sammenlignbar {
     private String firstName;
     private String lastName;
 
@@ -14,6 +14,14 @@ public class Person {
         return lastName + " " + firstName;
     }
 
-    // TODO: Gør det muligt at sammenligne (og dermed sortere) to personer
+    // Gør det muligt at sammenligne (og dermed sortere) to personer
+    @Override
+    public boolean sorteresEfter(Sammenlignbar andetObjekt) {
+        if(this.firstName.compareTo(((Person)andetObjekt).firstName) < 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
