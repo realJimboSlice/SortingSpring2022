@@ -11,9 +11,9 @@ public class SortExperiments {
     //app.sort3();
     //app.sort4();
     //app.sortBalls2();
-    app.sortBalls3();
+    //app.sortBalls3();
 
-    //app.sortPersons1();
+    app.sortPersons1();
     //app.sortPersons2();
 
     //app.sortBalls4();
@@ -104,8 +104,8 @@ public class SortExperiments {
     arr[2] = new Person("Harry", "Potter");
 
     System.out.println("Før sortering: " + Arrays.toString(arr));
-    // TODO: Sorter array af personer med quickSort
-
+  QuickSortSammenlignbar sorter = new QuickSortSammenlignbar();
+  sorter.sort(arr);
     System.out.println("Efter sortering: " + Arrays.toString(arr));
 
   }

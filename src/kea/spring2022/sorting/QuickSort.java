@@ -1,6 +1,6 @@
 package kea.spring2022.sorting;
 
-public class QuickSort {
+public class QuickSort implements Sammenlignbar{
     public int[] sort(int[] array) {                // NOTE: Datatype[]
         quicksort(array,0, array.length-1);
         return array;
@@ -24,5 +24,10 @@ public class QuickSort {
             quicksort(a,p,i);
             quicksort(a,i+2,r);
         }
+    }
+
+    @Override
+    public boolean sorteresEfter(Sammenlignbar andetObjekt) {
+        return false;
     }
 }
