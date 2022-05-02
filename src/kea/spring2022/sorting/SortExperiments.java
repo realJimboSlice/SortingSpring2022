@@ -13,8 +13,8 @@ public class SortExperiments {
         //app.sortBalls2();
         //app.sortBalls3();
 
-        app.sortPersons1();
-        //app.sortPersons2();
+        //app.sortPersons1();
+        app.sortPersons2();
 
         //app.sortBalls4();
     }
@@ -111,10 +111,8 @@ public class SortExperiments {
         arr[2] = new Person("Harry", "Potter");
 
         System.out.println("Før sortering: " + Arrays.toString(arr));
-        // TODO: Sorter array af personer med Arrays.sort
-
+        Arrays.sort(arr);
         System.out.println("Efter sortering: " + Arrays.toString(arr));
-
     }
 
     public void sortBalls4() {

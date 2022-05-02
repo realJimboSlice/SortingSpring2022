@@ -1,6 +1,6 @@
 package kea.spring2022.sorting;
 
-public class Person implements Sammenlignbar {
+public class Person implements Sammenlignbar, Comparable {
     private String firstName;
     private String lastName;
 
@@ -24,4 +24,8 @@ public class Person implements Sammenlignbar {
         }
     }
 
+    @Override
+    public int compareTo(Object o) {
+        return this.firstName.compareTo(((Person)o).firstName);
+    }
 }
