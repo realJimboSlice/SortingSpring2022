@@ -8,8 +8,8 @@ public class SortExperiments {
         //app.sort1();
         //app.sort2();
         //app.sortBalls1();
-        app.sort3();
-        //app.sort4();
+        //app.sort3();
+        app.sort4();
         //app.sortBalls2();
         //app.sortBalls3();
 
@@ -60,7 +60,7 @@ public class SortExperiments {
         String[] ord = {"bonde", "gård", "abe", "kat", "hund", "ko", "and"};
 
         System.out.println("Før sortering: " + Arrays.toString(ord));
-        QuickSort sorter = new QuickSort();
+        QuickSortStrings sorter = new QuickSortStrings();
         sorter.sort(ord);
         System.out.println("Efter sortering: " + Arrays.toString(ord));
     }
